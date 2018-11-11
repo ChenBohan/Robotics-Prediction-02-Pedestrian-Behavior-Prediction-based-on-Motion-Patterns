@@ -37,5 +37,33 @@ instances are being observed.
 
 ### Overview
 
+<img src="https://github.com/ChenBohan/Robotics-Prediction-02-Pedestrian-Behavior-Prediction-based-on-Motion-Patterns/blob/master/Readme_img/overview.png" width = "40%" height = "40%" div align=center />
+
+- To start with, when a group of pedestrian instances at time t are observed, they are first associated with existing trajectories that have been assembled through the previous t-1 time steps.
+  -  The association relies on the t-1 instances to optimize a global shortest distance for all instances.
+  -  From the newly formed trajectories with spatial location feature, we can derive the corresponding velocity and heading angle features.
+- Given the trajectories, MP are clustered using an instance-based clustering algorithm as a general representation of a sub-group of trajectories.
+  - Each clustered MP is further classified into MP-C or MP-I which is conditioned upon that the MP has been obtained based on a relative number of observable motion instances.
+- Finally, pedestrian behavior prediction accepts three inputs: (1) MP-C; (2) MP-I; and (3) current trajectories.
+  
+### MP Clustering
+
+To cluster MP from trajectories of one of the three feature dimensions, we employ the constrained gravitational clustering (CGC) method as described in [13].
+
+Analogy to gravitational force, existing clusters separated by a short distance are more likely to form a new cluster compared with those separated by a long distance.
+
+<img src="https://github.com/ChenBohan/Robotics-Prediction-02-Pedestrian-Behavior-Prediction-based-on-Motion-Patterns/blob/master/Readme_img/cluster.png" width = "50%" height = "50%" div align=center />
+
+### MP Classification 
+
+To classify MP, we propose a criterion based on the triangle algorithm [15].
+
+<img src="https://github.com/ChenBohan/Robotics-Prediction-02-Pedestrian-Behavior-Prediction-based-on-Motion-Patterns/blob/master/Readme_img/MP%20Classification.png" width = "50%" height = "50%" div align=center />
+
+## Result
+
+<img src="https://github.com/ChenBohan/Robotics-Prediction-02-Pedestrian-Behavior-Prediction-based-on-Motion-Patterns/blob/master/Readme_img/Multi-level%20prediction%20results.png" width = "50%" height = "50%" div align=center />
+
+<img src="https://github.com/ChenBohan/Robotics-Prediction-02-Pedestrian-Behavior-Prediction-based-on-Motion-Patterns/blob/master/Readme_img/Application.png" width = "50%" height = "50%" div align=center />
 
 
