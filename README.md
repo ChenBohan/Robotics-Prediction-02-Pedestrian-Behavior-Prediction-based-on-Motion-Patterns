@@ -2,7 +2,7 @@
 Paper: 'Pedestrian Behavior Prediction based on Motion Patt erns for Vehicle-to-Pedestrian Collision Avoidance'
 & 'Improved Multi-Level Pedestrian Behavior Prediction Based on Matching with Classified Motion Patterns'
 
-### Pedestrian Behavior Prediction based on Motion Patt erns for Vehicle-to-Pedestrian Collision Avoidance
+# Pedestrian Behavior Prediction based on Motion Patt erns for Vehicle-to-Pedestrian Collision Avoidance
 
 ## Abstract
 
@@ -66,4 +66,28 @@ To classify MP, we propose a criterion based on the triangle algorithm [15].
 
 <img src="https://github.com/ChenBohan/Robotics-Prediction-02-Pedestrian-Behavior-Prediction-based-on-Motion-Patterns/blob/master/Readme_img/Application.png" width = "50%" height = "50%" div align=center />
 
+# Improved Multi-Level Pedestrian Behavior Prediction Based on Matching with Classified Motion Patterns
 
+## Abstract
+
+- The improvement mainly focuses on the similarity matching criteria between the trajectory and the
+clustered MP whose main advantages are that 
+  - (1) a reasonable similarity range of MP is automatically calculated instead ofmanually set; 
+  - (2) the distance feature and the changing angle feature are considered together for similarity matching while only the distance feature is considered before.
+  
+<img src="https://github.com/ChenBohan/Robotics-Prediction-02-Pedestrian-Behavior-Prediction-based-on-Motion-Patterns/blob/master/Readme_img/Overview2.png" width = "50%" height = "50%" div align=center />
+  
+<img src="https://github.com/ChenBohan/Robotics-Prediction-02-Pedestrian-Behavior-Prediction-based-on-Motion-Patterns/blob/master/Readme_img/General%20Algorithmic%20Flow.png" width = "50%" height = "50%" div align=center />  
+
+## Matching
+
+- The matching process in the improved method consists of two stages: 
+  - pre-requisite matching
+    - In pre-requisite matching, a criterion based on distance between the current trajectory and the MP_C is proposed for deciding whether the current trajectory falls into a reasonable similarity range of the MP_C. 
+    - In our previous method, this criterion depends on a manually setting parameter that defines a similarity range of the MP_C. 
+    - It is improved that the similarity range of the MP_C can be automatically generated based on the left boundary and the right boundary of the MP_C.
+  - similarity matching. 
+    - On the other hand, our previous method only considers the distance between the current trajectory and the MP_C when measuring their similarity. 
+      - However, there are cases that the current trajectory may not be very similar to the MP_C although they are close to each other.       - In the improved method, we proposed a new similarity matching stage which is performed based on a criterion that considers changing angle calculation and comparison. 
+      
+<img src="https://github.com/ChenBohan/Robotics-Prediction-02-Pedestrian-Behavior-Prediction-based-on-Motion-Patterns/blob/master/Readme_img/Dimension%20equalization.pngg" width = "50%" height = "50%" div align=center />
