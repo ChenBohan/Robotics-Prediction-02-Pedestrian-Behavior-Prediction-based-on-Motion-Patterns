@@ -90,4 +90,4 @@ clustered MP whose main advantages are that
     - On the other hand, our previous method only considers the distance between the current trajectory and the MP_C when measuring their similarity. 
       - However, there are cases that the current trajectory may not be very similar to the MP_C although they are close to each other.       - In the improved method, we proposed a new similarity matching stage which is performed based on a criterion that considers changing angle calculation and comparison. 
       
-<img src="https://github.com/ChenBohan/Robotics-Prediction-02-Pedestrian-Behavior-Prediction-based-on-Motion-Patterns/blob/master/Readme_img/Dimension%20equalization.pngg" width = "50%" height = "50%" div align=center />
+<img src="https://github.com/ChenBohan/Robotics-Prediction-02-Pedestrian-Behavior-Prediction-based-on-Motion-Patterns/blob/master/Readme_img/Dimension%20equalization.png" width = "50%" height = "50%" div align=center />
