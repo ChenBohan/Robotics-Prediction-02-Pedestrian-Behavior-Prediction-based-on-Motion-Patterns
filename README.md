@@ -58,7 +58,7 @@ Analogy to gravitational force, existing clusters separated by a short distance 
 
 To classify MP, we propose a criterion based on the triangle algorithm [15].
 
-<img src="https://github.com/ChenBohan/Robotics-Prediction-02-Pedestrian-Behavior-Prediction-based-on-Motion-Patterns/blob/master/Readme_img/MP%20Classification.pngg" width = "50%" height = "50%" div align=center />
+<img src="https://github.com/ChenBohan/Robotics-Prediction-02-Pedestrian-Behavior-Prediction-based-on-Motion-Patterns/blob/master/Readme_img/MP%20Classification.png" width = "50%" height = "50%" div align=center />
 
 ## Result
 
